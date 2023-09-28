@@ -125,6 +125,11 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "mediafiles"
+CSRF_TRUSTED_ORIGINS = ["http://localhost:1337"]
+
+
 # For Development, any request to http://localhost:8000/static/* will be served from the "staticfiles" directory.
 # For production, add a volume to the web and nginx services in docker-compose.prod.yml so that each container will share a directory named "staticfiles"
 

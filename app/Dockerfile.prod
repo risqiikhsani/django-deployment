@@ -55,6 +55,7 @@ RUN mkdir $APP_HOME
 #     Create the folder in the Dockerfile (source)
 #     Change the permissions of the directory after it's mounted 
 RUN mkdir $APP_HOME/staticfiles
+RUN mkdir $APP_HOME/mediafiles
 WORKDIR $APP_HOME
 
 # install dependencies

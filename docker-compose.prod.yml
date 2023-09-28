@@ -9,6 +9,7 @@ services:
     # For production, add a volume to the web and nginx services in docker-compose.prod.yml so that each container will share a directory named "staticfiles"
     volumes:
       - static_volume:/home/app/web/staticfiles
+      - media_volume:/home/app/web/mediafiles
     # replace with expose after confugire nginx
     # ports:
     #   - 8000:8000
@@ -31,6 +32,7 @@ services:
     # For production, add a volume to the web and nginx services in docker-compose.prod.yml so that each container will share a directory named "staticfiles"
     volumes:
       - static_volume:/home/app/web/staticfiles
+      - media_volume:/home/app/web/mediafiles
     ports:
       - 1337:80
     depends_on:
@@ -39,3 +41,4 @@ services:
 volumes:
   postgres_data:
   static_volume:
+  media_volume:
