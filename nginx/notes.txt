@@ -1,0 +1,2 @@
+Review Using NGINX and NGINX Plus as an Application Gateway with uWSGI and Django for more info on configuring Nginx to work with Django.
+https://docs.nginx.com/nginx/admin-guide/web-server/app-gateway-uwsgi-django/
